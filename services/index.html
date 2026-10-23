@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Услуги и запись на консультацию — стоматология</title>
+  <meta name="description" content="Элайнеры, имплантация, брекеты и терапия. Запишитесь на бесплатную консультацию.">
+  <meta name="theme-color" content="#f3f6ff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2338bfc4'/%3E%3Cpath d='M10 9c2-1 4 0 6 1 2-1 4-2 6-1 3 2 2 7 0 11-1 3-2 4-3 2l-1-4c-1-2-3-2-4 0l-1 4c-1 2-2 1-3-2-2-4-3-9 0-11z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/montserrat-cyrillic-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/main.js?v=3" defer></script>
+</head>
+<body>
+  <h1 class="visually-hidden">Стоматологическая клиника: услуги и запись на консультацию</h1>
+
+  <!-- ===== Услуги ===== -->
+  <section class="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 class="services__title" id="services-title">Услуги</h2>
+    </div>
+
+    <div class="slider" data-slider>
+      <ul class="slider__track">
+        <li class="service">
+          <div class="service__media">
+            <img src="img/aligners.webp" width="768" height="768" alt="Врач примеряет пациентке прозрачный элайнер" loading="lazy">
+            <h3 class="service__title">Элайнеры</h3>
+          </div>
+          <div class="service__actions">
+            <button class="service__consult" type="button" data-service="Элайнеры">Консультация</button>
+            <!-- Страниц услуг в макете нет, ссылки — заглушки -->
+            <a class="service__more" href="#service-aligners" aria-label="Подробнее об услуге «Элайнеры»">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="service service--object">
+          <div class="service__media">
+            <img src="img/implantation.webp" width="768" height="768" alt="Модель зубного импланта с абатментом и коронкой" loading="lazy">
+            <h3 class="service__title">Имплантация</h3>
+          </div>
+          <div class="service__actions">
+            <button class="service__consult" type="button" data-service="Имплантация">Консультация</button>
+            <a class="service__more" href="#service-implantation" aria-label="Подробнее об услуге «Имплантация»">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="service">
+          <div class="service__media">
+            <img src="img/braces.webp" width="768" height="768" alt="Улыбающаяся девушка с брекетами" loading="lazy">
+            <h3 class="service__title">Брекеты</h3>
+          </div>
+          <div class="service__actions">
+            <button class="service__consult" type="button" data-service="Брекеты">Консультация</button>
+            <a class="service__more" href="#service-braces" aria-label="Подробнее об услуге «Брекеты»">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+
+        <li class="service service--object">
+          <div class="service__media">
+            <img src="img/therapy.webp" width="768" height="768" alt="Стоматологическое зеркало" loading="lazy">
+            <h3 class="service__title">Терапия</h3>
+          </div>
+          <div class="service__actions">
+            <button class="service__consult" type="button" data-service="Терапия">Консультация</button>
+            <a class="service__more" href="#service-therapy" aria-label="Подробнее об услуге «Терапия»">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9.5 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Форма записи ===== -->
+  <section class="booking" id="booking" aria-labelledby="booking-title">
+    <div class="container">
+      <div class="panel" data-panel>
+        <div class="panel__bg" aria-hidden="true"></div>
+        <div class="panel__media" aria-hidden="true">
+          <img class="panel__photo" src="img/consult-woman.webp" alt="" width="548" height="354" loading="lazy">
+        </div>
+
+        <div class="panel__content">
+          <div class="panel__form-view">
+            <h2 class="panel__title" id="booking-title">Запишитесь<br class="br-mobile"> на&nbsp;бесплатную консультацию прямо сейчас!</h2>
+            <p class="panel__text">Хотите узнать подробнее? Наши специалисты ответят на все ваши вопросы и помогут выбрать оптимальный путь к здоровой и красивой улыбке.</p>
+
+            <form class="form" id="booking-form" novalidate>
+              <input type="hidden" name="service" value="">
+
+              <div class="field">
+                <label class="field__label" for="fio">Введите ФИО</label>
+                <input class="field__input" id="fio" name="fio" type="text" autocomplete="name"
+                       placeholder="ФИО" aria-describedby="fio-error" required>
+                <p class="field__error" id="fio-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="phone">Введите номер телефона</label>
+                <input class="field__input" id="phone" name="phone" type="tel" autocomplete="tel"
+                       inputmode="tel" placeholder="+7..." aria-describedby="phone-error" required>
+                <p class="field__error" id="phone-error" aria-live="polite"></p>
+              </div>
+
+              <button class="form__submit" type="submit">Записаться на прием</button>
+
+              <div class="consent">
+                <label class="consent__label">
+                  <input class="consent__input" type="checkbox" name="consent" aria-describedby="consent-error" required>
+                  <span class="consent__box" aria-hidden="true">
+                    <svg viewBox="0 0 12 12" fill="none"><path d="M2 6.2l2.6 2.6L10 3.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="consent__text">я даю свое согласие на <a class="consent__link" href="#privacy">обработку персональных данных</a></span>
+                </label>
+                <p class="field__error" id="consent-error" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+
+          <div class="success" id="booking-success" role="status" tabindex="-1" hidden>
+            <p class="success__title">Заявка принята</p>
+            <p class="success__text" id="success-text">Администратор позвонит вам и подберёт удобное время приёма.</p>
+            <button class="success__again" type="button" data-reset>Отправить ещё одну заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

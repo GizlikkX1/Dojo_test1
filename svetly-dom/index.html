@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Додзё Медиа — сайты, поиск и реклама</title>
+  <meta name="description" content="Собираем сайты, поиск и рекламу в единую систему. Помогаем амбициозным брендам расти.">
+  <meta name="theme-color" content="#f1ede2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23302038'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' fill='%23f1ede2' text-anchor='middle'%3E%D0%94%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/oranienbaum-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <script src="js/main.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="header container">
+    <div class="header__bar">
+      <a class="logo" href="./">Додзё Медиа</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link text-link" href="#works">Проекты</a></li>
+          <li><a class="nav__link text-link" href="#approach">Подход</a></li>
+          <li><a class="nav__link text-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="button header__cta" type="button" data-open-dialog>
+        Обсудить проект <span aria-hidden="true">→</span>
+      </button>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+        <span class="menu-toggle__line" aria-hidden="true"></span>
+        <span class="menu-toggle__line" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Мобильная навигация">
+        <ul>
+          <li><a class="mobile-menu__link text-link" href="#works">Проекты</a></li>
+          <li><a class="mobile-menu__link text-link" href="#approach">Подход</a></li>
+          <li><a class="mobile-menu__link text-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="button button--block" type="button" data-open-dialog>
+        Обсудить проект <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="approach" aria-labelledby="hero-title">
+      <div class="hero__head">
+        <p class="label">Сайты · поиск · смысл</p>
+        <div class="hero__grid">
+          <h1 class="hero__title h1" id="hero-title">Цифровое ремесло.<br> Измеримый результат.</h1>
+          <div class="hero__lead">
+            <p>Собираем сайты, поиск и&nbsp;рекламу в&nbsp;единую систему. Помогаем амбициозным брендам расти.</p>
+            <p class="label">Из Ярославля — в любую точку мира</p>
+          </div>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <img
+          src="img/hero-1200.webp"
+          srcset="img/hero-1200.webp 1200w, img/hero-2252.webp 2252w"
+          sizes="(min-width: 1280px) 1200px, (min-width: 768px) calc(100vw - 80px), 600px"
+          width="2252" height="904"
+          alt="Люди в одеждах эпохи Возрождения работают с ноутбуком, планшетом, картой и графиками"
+          fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="works container" id="works" aria-labelledby="works-title">
+      <div class="works__head">
+        <h2 class="h2" id="works-title">Избранные работы</h2>
+        <p class="label">Три проекта. Три истории.</p>
+      </div>
+
+      <ul class="works__list">
+        <li>
+          <!-- Страниц кейсов в макете нет, поэтому ссылки — заглушки -->
+          <a class="card" href="#project-briskly">
+            <img class="card__image" src="img/briskly.webp" width="800" height="500" alt="" loading="lazy">
+            <h3 class="card__title">Брискли</h3>
+            <p class="card__meta small">Сайт · Брендинг · Реклама</p>
+            <span class="small">Смотреть проект <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="#project-trade-overseas">
+            <img class="card__image" src="img/trade-overseas.webp" width="800" height="500" alt="" loading="lazy">
+            <h3 class="card__title">Трейд Оверсиз</h3>
+            <p class="card__meta small">Сайт · Стратегия · Реклама</p>
+            <span class="small">Смотреть проект <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li>
+          <a class="card" href="#project-gostiny-dvor">
+            <img class="card__image" src="img/gostiny-dvor.webp" width="800" height="500" alt="" loading="lazy">
+            <h3 class="card__title">Гостиный двор</h3>
+            <p class="card__meta small">Сайт · Брендинг · Стратегия</p>
+            <span class="small">Смотреть проект <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer container" id="contacts">
+    <div class="cta">
+      <div class="cta__text">
+        <h2 class="h2">Начнём с вашей идеи.</h2>
+        <a class="cta__email small text-link" href="mailto:hello@dojo-media.com">hello@dojo-media.com</a>
+      </div>
+      <button class="button" type="button" data-open-dialog>
+        Обсудить проект <span aria-hidden="true">→</span>
+      </button>
+    </div>
+    <div class="footer__bottom small">
+      <p>© 2026 Додзё Медиа</p>
+      <p>Мастерство начинается с деталей.</p>
+    </div>
+  </footer>
+
+  <!-- Демонстрационная форма: данные никуда не отправляются -->
+  <dialog class="dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog__inner">
+      <button class="dialog__close" type="button" data-close-dialog aria-label="Закрыть окно">
+        <span aria-hidden="true">×</span>
+      </button>
+
+      <div class="dialog__form-view">
+        <h2 class="dialog__title" id="dialog-title">Обсудим проект</h2>
+        <p class="dialog__text small">Оставьте контакты, и&nbsp;мы ответим в&nbsp;течение рабочего дня.</p>
+
+        <form class="form" id="project-form" novalidate>
+          <div class="field">
+            <label class="field__label" for="name">Имя</label>
+            <input class="field__input" id="name" name="name" type="text" autocomplete="name"
+                   placeholder="Как к вам обращаться" aria-describedby="name-error" required>
+            <p class="field__error" id="name-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="email">Email</label>
+            <input class="field__input" id="email" name="email" type="email" autocomplete="email"
+                   inputmode="email" placeholder="name@company.ru" aria-describedby="email-error" required>
+            <p class="field__error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="message">О задаче <span class="field__optional">— необязательно</span></label>
+            <textarea class="field__input" id="message" name="message" maxlength="1000"
+                      placeholder="Например: нужен сайт и реклама для запуска нового продукта"></textarea>
+          </div>
+
+          <button class="button button--block" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+
+      <div class="success" id="form-success" role="status" hidden tabindex="-1">
+        <h2 class="dialog__title">Заявка отправлена</h2>
+        <p class="dialog__text small" id="success-text">Мы ответим в течение рабочего дня.</p>
+        <button class="button button--block" type="button" data-close-dialog>Закрыть</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
